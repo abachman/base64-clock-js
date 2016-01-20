@@ -233,6 +233,10 @@ defer(function () {
     // sub.innerHTML = time_string_array.join(' ');
   }
 
+  // immediately render time
+  showTime();
+
+  // start clock
   var clock = new Clock(function (clock) { showTime(clock); });
 
   // count down from 10000 hours
